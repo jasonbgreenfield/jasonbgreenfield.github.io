@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jason Greenfield</title>
+
+  <script src="https://kit.fontawesome.com/d4167c8d4c.js" crossorigin="anonymous"></script>
+
+  <style>
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f4f4f4;
+  }
+
+  header {
+    background: url('images/banner.jpg') center/cover no-repeat;
+    height: 250px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+  }
+
+  .sidebar {
+    width: 300px;
+    padding: 2em;
+    background: #fafafa;
+    border-right: 1px solid #ddd;
+    flex-shrink: 0;
+  }
+
+  .sidebar img {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+  }
+
+  .sidebar h2 {
+    margin-bottom: 0.5em;
+  }
+
+  .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1em;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 0.75em;
+  }
+
+  .sidebar a {
+    color: #007acc;
+    text-decoration: none;
+  }
+
+  .sidebar a:hover {
+    text-decoration: underline;
+  }
+
+  .sidebar i {
+    margin-right: 8px;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 2em;
+  }
+
+  nav {
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin-right: 1em;
+    text-decoration: none;
+    color: #007acc;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  ul.interests {
+    padding-left: 1.2em;
+  }
+
+  /* Mobile-friendly layout */
+  @media (max-width: 768px) {
+    .wrapper {
+      flex-direction: column;
+    }
+
+    .sidebar {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .main-content {
+      padding: 1.5em;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 0.5em;
+      font-size: 1.2em; /* slightly larger */
+      font-weight: 500;
+    }
+  }
+</style>
+
+
+</head>
+<body>
+
+<header></header>
+
+<div class="wrapper">
+  <aside class="sidebar">
+    <img src="images/profile.jpg" alt="Profile photo">
+    <h2>Jason Greenfield</h2>
+    <p>PhD Student in Computer Science, Princeton University</p>
+
+    <ul>
+      <li>
+        <a href="mailto:greenfield@princeton.edy">
+          <i class="fas fa-envelope"></i> greenfield@princeton.edu
+        </a>
+      </li>
+      <li>
+        <a href="https://humans-and-machines.github.io/" target="_blank">
+          <i class="fas fa-university"></i> Humans and Machines @ Princeton
+        </a>
+      </li>
+      <li>
+        <a href="https://citp.princeton.edu/people/jason-greenfield" target="_blank">
+          <i class="fas fa-university"></i> CITP @ Princeton
+        </a>
+      </li>
+      <li>
+        <a href="https://csmapnyu.org/people/jason-greenfield" target="_blank">
+          <i class="fas fa-university"></i> CSMaP @ NYU
+        </a>
+      </li>
+      <li>
+        <a href="https://scholar.google.com/citations?user=bju6Ou0AAAAJ&hl=en" target="_blank">
+          <i class="fas fa-graduation-cap"></i> Google Scholar
+        </a>
+      </li>
+      <li>
+        <a href="https://orcid.org/0009-0004-7586-2243" target="_blank">
+          <i class="fab fa-orcid"></i> ORCID
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/jasonbgreenfield" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://bsky.app/profile/jasong.bsky.social" target="_blank">
+          <i class="fa-brands fa-bluesky"></i> Bluesky
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="cv/Jason_Greenfield_CV.pdf" target="_blank">CV</a>
+    </nav>
+
+    <p>
+      I am a Computer Science PhD student at Princeton University advised by <a href="https://manoelhortaribeiro.github.io/">Manoel Horta Ribeiro</a>. I am affiliated with the <a href="https://citp.princeton.edu/">Center for Information Technology Policy (CITP)</a> and <a href="https://humans-and-machines.github.io/">Humans and Machines Lab</a>.
+    </p>
+    <p>
+      I am a Computational Social Scientist who cares about promoting pro-social and pro-democratic interactions between technology and society. My research broadly examines social media and politics with a primary focus on multimodal digital media emphasizing audio- and video-based platforms such as TikTok, podcasts, and radio.
+        I am particularly interested in how humor helps hate spread online and developing methods for researching this phenomenon at scale.
+    </p>
+    <p>
+      Prior to starting my PhD, I worked as a Research Engineer at the <a href="https://csmapnyu.org/">Center for Social Media and Politics at NYU (CSMaP)</a> and a Data Engineer on the Dark Web and Criminal Underground Team at a cyber threat intelligence company. I received my BA in Computer Science and Political Science from Amherst College in 2020. When I'm not researching, you'll most likely find me climbing rocks either indoors or out!
+    </p>
+
+    <h3>Research Keywords</h3>
+    <ul class="interests">
+      <li>How Humor Helps Hate</li>
+      <li>Computational Social Science</li>
+      <li>Multimodal Methods</li>
+      <li>Platform Governance</li>
+    </ul>
+  </main>
+</div>
+
+</body>
+</html>
