@@ -7,8 +7,9 @@
   <style>
     body { margin: 0; font-family: sans-serif; background: #f4f4f4; }
     .container { max-width: 900px; margin: auto; padding: 2em; background: #fff; }
-    .pub { display: flex; margin-bottom: 2em; gap: 1em; }
-    .pub img { width: 140px; height: auto; }
+    .pub { display: flex; margin-bottom: 2em; gap: 1em; flex-wrap: wrap; }
+    .pub img { width: 140px; max-width: 100%; height: auto; flex-shrink: 0; }
+    @media (max-width: 500px) { .pub img { width: 100%; } }
     .details { flex: 1; }
     .details h3 { margin: 0 0 0.2em; }
     .details p { margin: 0.2em 0; }
